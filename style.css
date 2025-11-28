@@ -27,7 +27,7 @@ body {
     animation: zoom-in 1s ease forwards;
 }
 
-@keyframes zoom-in {
+zoom-in {
     100% { transform: scale(1); }
 }
 
