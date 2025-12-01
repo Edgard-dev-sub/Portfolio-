@@ -27,7 +27,8 @@ body {
     animation: zoom-in 1s ease forwards;
 }
 
-zoom-in {
+/* CORREÇÃO DO ERRO AQUI 👇 */
+@keyframes zoom-in {
     100% { transform: scale(1); }
 }
 
@@ -43,7 +44,12 @@ header {
     z-index: 100;
 }
 
-.logo { font-size: 25px; color: aliceblue; text-decoration: none; font-weight: 600; } 
+.logo { 
+    font-size: 25px; 
+    color: aliceblue; 
+    text-decoration: none; 
+    font-weight: 600; 
+} 
 
 .navbar a {
     font-size: 18px;
@@ -56,7 +62,9 @@ header {
 }
 
 .navbar a:hover,
-.navbar a.active { border-color: #fff; }
+.navbar a.active { 
+    border-color: #fff; 
+}
 
 .animated {
     transform: translateY(30px);
@@ -66,7 +74,10 @@ header {
 }
 
 @keyframes slide-in {
-    100% { transform: translateY(0); opacity: 1; }
+    100% { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
 }
 
 /* HOME */
@@ -82,7 +93,11 @@ header {
 .home-detail h2 { font-size: 30px; }
 .home-detail p { margin: 10px 0 20px; }
 
-.download-social { display: flex; align-items: center; }
+.download-social { 
+    display: flex; 
+    align-items: center; 
+}
+
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -95,9 +110,15 @@ header {
     font-weight: 500;
     transition: .5s;
 }
-.btn:hover { background: transparent; box-shadow: none; color: #fff; }
+
+.btn:hover { 
+    background: transparent; 
+    box-shadow: none; 
+    color: #fff; 
+}
 
 .social-icons { margin-left: 20px; }
+
 .social-icons a {
     display: inline-flex;
     padding: 8px;
@@ -109,7 +130,12 @@ header {
     margin: 0 8px;
     transition: .5s;
 }
-.social-icons a:hover { background: #fff; color: #333; box-shadow: 0 0 10px #fff; }
+
+.social-icons a:hover { 
+    background: #fff; 
+    color: #333; 
+    box-shadow: 0 0 10px #fff; 
+}
 
 .home-img .img-box {
     position: relative;
@@ -120,6 +146,7 @@ header {
     box-shadow: 0 0 20px #fff;
     overflow: hidden;
 }
+
 .home-img .img-box img {
     position: absolute;
     top: 30px;
@@ -135,7 +162,12 @@ header {
     padding: 80px 5%;
     text-align: center;
 }
-.about h2 { font-size: 40px; margin-bottom: 20px; }
+
+.about h2 { 
+    font-size: 40px; 
+    margin-bottom: 20px; 
+}
+
 .about p {
     font-size: 18px;
     max-width: 800px;
@@ -152,7 +184,12 @@ header {
     padding: 80px 5%;
     text-align: center;
 }
-.contact h2 { font-size: 40px; margin-bottom: 30px; }
+
+.contact h2 { 
+    font-size: 40px; 
+    margin-bottom: 30px; 
+}
+
 .contact form {
     max-width: 600px;
     margin: 0 auto;
@@ -160,6 +197,7 @@ header {
     flex-direction: column;
     gap: 15px;
 }
+
 .contact input,
 .contact textarea {
     padding: 12px 15px;
@@ -170,6 +208,15 @@ header {
     font-size: 16px;
     resize: none;
 }
+
 .contact input::placeholder,
-.contact textarea::placeholder { color: rgba(255, 255, 255, 0.7); }
-.contact button { align-self: center; cursor: pointer; }
+.contact textarea::placeholder { 
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+.contact button { 
+    align-self: center; 
+    cursor: pointer; 
+}
+
+
