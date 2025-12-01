@@ -49,17 +49,27 @@
 
                 
         <section id="contato" class="contact animated">
-            <h2>Entre em Contato</h2>
-            <form action="https://formsubmit.co/seuemail@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </section>
-    </div>
-</body>
-</html>
+
+    <h2>Entre em Contato</h2>
+
+    <form action="https://formsubmit.co/SEU-EMAIL-AQUI@gmail.com" method="POST">
+
+        <!-- Anti-spam e configurações -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+        <!-- Campos do formulário -->
+        <input type="text" name="name" placeholder="Seu nome" required>
+
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+
+        <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+
+</section>
 
 
 
