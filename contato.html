@@ -3,34 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Edgard-Dev</title>
-
+    <title>Contato - Portfólio</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="contato-bg">
-    <div class="container">
-        <header class="animated">
-            <a href="index.html" class="logo">Portfolio</a>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="contato.html" class="active">Contato</a>            
-            </nav>
-        </header>
 
-        <section class="contact animated">
-            <h2>Entre em Contato</h2>
-            <p>Preencha o formulário abaixo ou envie um e-mail diretamente para <strong>edgardrodriguessilva3@gmail.com</strong>.</p>
+<body>
 
-            <form action="https://formsubmit.co/edgardrodriguessilva3@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </section>
-    </div>
+<div class="container">
+
+    <header>
+        <a href="#" class="logo">Edgard</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <section class="contact animated" style="padding-top:120px;">
+
+        <h2>Entre em Contato</h2>
+
+        <p style="
+            max-width: 600px;
+            margin: 0 auto 40px;
+            background: rgba(255,255,255,.1);
+            padding: 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            font-size: 17px;
+        ">
+            Preencha o formulário abaixo ou fale comigo através das redes sociais.
+            Retornarei o mais rápido possível!
+        </p>
+
+        <form action="#" method="post">
+
+            <input type="text" name="nome" placeholder="Seu nome" required>
+
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+
+            <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+            <button class="btn" type="submit">Enviar Mensagem</button>
+
+        </form>
+
+        <br><br>
+
+        <div class="social-icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-github-fill"></i></a>
+        </div>
+
+    </section>
+
+</div>
+
 </body>
 </html>
